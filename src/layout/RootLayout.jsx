@@ -6,7 +6,9 @@ const RootLayout = () => {
     <div className="min-h-screen flex">
       {/* Left Sidebar (25%) */}
       <aside className="w-1/4 bg-slate-900 text-white p-4">
-        <h2 className="text-xl font-semibold mb-4">Dashboard</h2>
+        <Link to="/">
+          <h2 className="text-xl font-semibold mb-4">Dashboard</h2>
+        </Link>
         <ul className="space-y-2">
           <li className="hover:bg-slate-700 p-2 rounded cursor-pointer">
             <Link to="/">Dashboard Overview</Link>
