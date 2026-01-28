@@ -18,7 +18,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// চার্টের জন্য ডামি ডাটা
 const chartData = [
   { name: "Mon", calls: 45 },
   { name: "Tue", calls: 62 },
@@ -32,7 +31,6 @@ const chartData = [
 const DashboardMain = () => {
   return (
     <div className="p-6 bg-[#0B1121] min-h-screen text-white font-sans">
-      {/* ১. টপ স্ট্যাট কার্ডস (৬টি কার্ড) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
         <StatCard
           title="Total Calls Today"
@@ -79,7 +77,6 @@ const DashboardMain = () => {
         />
       </div>
 
-      {/* ২. কল ট্রেন্ডস চার্ট সেকশন */}
       <div className="bg-[#162031] p-6 rounded-2xl mb-6 border border-gray-800">
         <div className="flex justify-between items-start mb-6">
           <div>
@@ -131,7 +128,6 @@ const DashboardMain = () => {
         </div>
       </div>
 
-      {/* ৩. নিচের দুটি সেকশন (Activity & Repair Requests) */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Recent Activity */}
         <div className="bg-[#162031] p-6 rounded-2xl border border-gray-800">
@@ -193,7 +189,6 @@ const DashboardMain = () => {
   );
 };
 
-// সাব-কম্পোনেন্ট: স্ট্যাট কার্ড
 const StatCard = ({ title, value, change, icon, iconBg, isNegative }) => (
   <div className="bg-[#162031] p-5 rounded-2xl border border-gray-800 flex justify-between items-start">
     <div>
@@ -211,7 +206,6 @@ const StatCard = ({ title, value, change, icon, iconBg, isNegative }) => (
   </div>
 );
 
-// সাব-কম্পোনেন্ট: অ্যাক্টিভিটি আইটেম
 const ActivityItem = ({ dotColor, title, time }) => (
   <div className="bg-[#1E293B]/40 p-3 rounded-xl flex items-start gap-3">
     <div className={`w-2 h-2 rounded-full mt-2 shrink-0 ${dotColor}`}></div>
@@ -222,7 +216,6 @@ const ActivityItem = ({ dotColor, title, time }) => (
   </div>
 );
 
-// সাব-কম্পোনেন্ট: প্রগ্রেস বার
 const ProgressItem = ({ label, value, color }) => (
   <div>
     <div className="flex justify-between text-xs mb-1.5">
