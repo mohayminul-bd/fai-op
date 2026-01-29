@@ -69,7 +69,7 @@ const Appointments = () => {
               <tr className="text-gray-400 font-medium">
                 <th className="py-4">Client Name</th>
                 <th>Client Phone</th>
-                <th>Client mail</th>
+                <th>Client Email</th>
                 <th>Device</th>
                 <th>Repair Type</th>
                 <th>Date</th>
