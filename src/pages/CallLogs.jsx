@@ -12,9 +12,8 @@ import {
 const CallLogs = () => {
   return (
     <div className="p-6 bg-[#0B1121] min-h-screen text-white font-sans">
-      {/* ১. টপ ফিল্টার বার */}
       <div className="flex flex-wrap gap-4 mb-6 items-center">
-        <div className="relative flex-1 min-w-[300px]">
+        <div className="relative flex-1 min-w-[300 px]">
           <Search
             className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
             size={18}
@@ -33,7 +32,6 @@ const CallLogs = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* ২. বাম পাশের কল লিস্ট (Column 5) */}
         <div className="lg:col-span-5 space-y-4">
           <h3 className="text-lg font-semibold mb-4">Call List</h3>
           <CallListItem
@@ -66,7 +64,6 @@ const CallLogs = () => {
           />
         </div>
 
-        {/* ৩. ডান পাশের কল ডিটেইলস (Column 7) */}
         <div className="lg:col-span-7 bg-[#162031] rounded-2xl border border-gray-800 p-6 self-start">
           <h3 className="text-lg font-semibold mb-6">Call Details</h3>
 
@@ -98,7 +95,6 @@ const CallLogs = () => {
             <span>Play Audio Recording</span>
           </button>
 
-          {/* ট্রান্সক্রিপ্ট সেকশন */}
           <div>
             <div className="flex items-center gap-2 mb-4 text-gray-400">
               <FileText size={18} />
@@ -127,8 +123,6 @@ const CallLogs = () => {
     </div>
   );
 };
-
-// --- ছোট ছোট কম্পোনেন্টগুলো নিচে ---
 
 const FilterDropdown = ({ label }) => (
   <button className="flex items-center gap-2 bg-[#162031] border border-gray-800 px-4 py-2 rounded-xl text-sm hover:bg-[#1E293B] transition">

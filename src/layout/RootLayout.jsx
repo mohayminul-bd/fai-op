@@ -24,9 +24,11 @@ const RootLayout = () => {
     <div className="h-screen flex overflow-hidden bg-[#0B1121]">
       <aside className="w-64 bg-[#0B1121] text-white flex flex-col border-r border-gray-800/50">
         <div className="p-6 mb-4 text-center ml-18">
-          <div className="w-10 h-10 rounded-xl text-center flex items-center justify-center bg-gradient-to-tr from-[#00E5FF] to-[#00FFB2] shadow-[0_0_20px_rgba(0,255,178,0.4)]">
-            <RxLightningBolt className="text-[#0B1121] w-6 h-6 stroke-[0.5px]" />
-          </div>
+          <Link to="/">
+            <div className="w-10 h-10 rounded-xl text-center flex items-center justify-center bg-gradient-to-tr from-[#00E5FF] to-[#00FFB2] shadow-[0_0_20px_rgba(0,255,178,0.4)]">
+              <RxLightningBolt className="text-[#0B1121] w-6 h-6 stroke-[0.5px]" />
+            </div>
+          </Link>
         </div>
 
         <nav className="flex-1 px-4 space-y-2">
