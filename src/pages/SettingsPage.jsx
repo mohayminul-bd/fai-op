@@ -30,7 +30,7 @@ const SettingsPage = () => {
       </div>
 
       <div className="max-w-4xl">
-        <h3 className="text-gray-400 text-sm mb-4">Profile Image</h3>
+        <h3 className="text-gray-400 text-sm mb-4">Profile image</h3>
 
         <div className="relative w-20 h-20 mb-10">
           <img
